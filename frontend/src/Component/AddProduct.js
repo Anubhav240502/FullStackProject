@@ -33,7 +33,7 @@ const AddProduct = () => {
         const userId = (JSON.parse(localStorage.getItem('user')))._id;
         console.warn(userId)
         // console.warn(userId._id);
-        let result = await fetch('http://localhost:5000/add-product',{
+        let result = await fetch('https://full-stack-project-seven-ashy.vercel.app/add-product',{
             method:"post",
             body:JSON.stringify({...state,userId}),
             headers:{

@@ -23,7 +23,7 @@ const Login = () => {
    }
    const Submit = async ()=>{
     console.log(state);
-    let result = await fetch('http://localhost:5000/login',{
+    let result = await fetch('https://full-stack-project-seven-ashy.vercel.app/login',{
       method:"post",
       body:JSON.stringify(state),
       headers:{"Content-Type":"application/json"}

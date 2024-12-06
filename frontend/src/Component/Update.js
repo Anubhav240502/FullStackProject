@@ -23,7 +23,7 @@ const Update = () => {
 
     }
     const getItem = async()=>{
-        let result = await fetch(`http://localhost:5000/update/${params}`,{
+        let result = await fetch(`https://full-stack-project-seven-ashy.vercel.app/update/${params}`,{
         headers:{
           authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
         }
@@ -39,7 +39,7 @@ const Update = () => {
         })
     }
     const Submit = async()=>{
-    let result = await fetch(`http://localhost:5000/update-product/${params}`,{
+    let result = await fetch(`https://full-stack-project-seven-ashy.vercel.app/update-product/${params}`,{
         method:'put',
         body: JSON.stringify(state),
         headers:{

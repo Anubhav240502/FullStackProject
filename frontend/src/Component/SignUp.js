@@ -26,7 +26,7 @@ const SignUp = () => {
     }
     const Submit = async ()=>{
         console.log(state);
-        let result = await fetch("http://localhost:5000/register",{
+        let result = await fetch("https://full-stack-project-seven-ashy.vercel.app/register",{
           method:"post",
           body:JSON.stringify(state),
           headers:{
