@@ -1,2 +1,2 @@
 const mongoose = require('mongoose')
-mongoose.connect("mongodb+srv://anubhav15426:<anubhav15426>@cluster0.mrwf0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>console.log("Hello from server"))
+mongoose.connect("mongodb+srv://anubhav15426:anubhav15426@cluster0.mrwf0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>console.log("Hello from server"))
